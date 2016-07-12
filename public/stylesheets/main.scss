@@ -1,0 +1,53 @@
+header {
+  background-color: $header;
+  color: $white;
+  font-size: 2rem;
+  height: 10vh;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  @include header-text;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.books {
+  width: 50%;
+  display: inline-block;
+  img {
+    width: 38vw;
+    height: 50vh;
+    box-shadow: 4px 4px 14px  hsl(13, 88%, 10%);
+  }
+  h1{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    @include header-text;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: $black;
+  }
+}
+
+.authors {
+  width: 50%;
+  float: left;
+  img {
+    width: 38vw;
+    height: 50vh;
+    box-shadow: 4px 4px 14px  hsl(13, 88%, 10%);
+  }
+  h1{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    @include header-text;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: $black;
+  }
+}

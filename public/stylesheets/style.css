@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+header {
+  background-color: #030444;
+  color: #fff;
+  font-size: 2rem;
+  height: 10vh;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh; }
+
+.books {
+  width: 50%;
+  display: inline-block; }
+  .books img {
+    width: 38vw;
+    height: 50vh;
+    box-shadow: 4px 4px 14px #300d03; }
+  .books h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #191b18; }
+
+.authors {
+  width: 50%;
+  float: left; }
+  .authors img {
+    width: 38vw;
+    height: 50vh;
+    box-shadow: 4px 4px 14px #300d03; }
+  .authors h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #191b18; }
+
+/*# sourceMappingURL=style.css.map */
