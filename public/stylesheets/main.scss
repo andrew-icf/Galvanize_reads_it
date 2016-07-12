@@ -53,7 +53,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 140vh;
+  margin-top: 10vh;
   margin-left: 20vw;
   line-height: 1.2rem;
   img {
@@ -101,4 +101,17 @@ header {
   .fa-times {
     color: rgba(194, 9, 36, 0.9);
   }
+}
+.addButton {
+  width: 18vw;
+  height: 3vh;
+  padding: 2rem;
+  background-color: #236467;
+  margin-bottom: 2rem;
+  color: $white;
+  font-weight: 600;
+  font-size: 2rem;
+}
+a  {
+  text-decoration: none !important;
 }
