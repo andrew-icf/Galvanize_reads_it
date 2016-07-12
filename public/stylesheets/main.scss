@@ -12,6 +12,15 @@ header {
   width: 80%;
   margin: auto;
   margin-top: 5vh;
+  h1{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    @include header-text;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: $black;
+  }
 }
 
 .books {
@@ -21,15 +30,6 @@ header {
     width: 38vw;
     height: 50vh;
     box-shadow: 4px 4px 14px  hsl(13, 88%, 10%);
-  }
-  h1{
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    @include header-text;
-    font-size: 2rem;
-    margin-top: 1rem;
-    color: $black;
   }
 }
 
@@ -41,13 +41,64 @@ header {
     height: 50vh;
     box-shadow: 4px 4px 14px  hsl(13, 88%, 10%);
   }
-  h1{
-    width: 100%;
-    margin: auto;
-    text-align: center;
+}
+.flexy {
+  display: flex;
+}
+
+.bookPage {
+  width: 60vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 140vh;
+  margin-left: 20vw;
+  line-height: 1.2rem;
+  img {
+    width: 15vw;
+    height: 40vh;
+  }
+}
+.box {
+  width: 20vw;
+  height: 15vh;
+  background-color: $light-grey;
+  display: inline-block;
+  margin: 2rem;
+  i {
+    margin-left: 9vw;
+    margin-top: 1vh;
+  }
+  h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include header-text;
-    font-size: 2rem;
-    margin-top: 1rem;
-    color: $black;
+    font-size: 1.5rem;
+  }
+}
+.bookCover {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.bookInfo {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bookDes {
+  margin-top: 5rem;
+}
+.icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  .fa-pencil {
+    color: hsla(227, 91%, 58%, 0.77);
+  }
+  .fa-times {
+    color: rgba(194, 9, 36, 0.9);
   }
 }

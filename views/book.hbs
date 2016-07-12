@@ -1,0 +1,33 @@
+<section class="box">
+  <i class="fa fa-user fa-2x"></i>
+  <h2>Authors</h2>
+</section>
+<section class="box">
+  <i class="fa fa-bookmark fa-2x"></i>
+  <h2>Books</h2>
+</section>
+
+<section class="flexy">
+  <section class='bookPage'>
+    <ul>
+      {{#each data}}
+      <div class="bookCover">
+        <img src="{{cover_url}}" alt="book cover" />
+        <div class="bookInfo">
+          <li>{{title}}</li>
+          <div class="icon">
+            <i class="fa fa-pencil fa-2x"></i>
+            <i class="fa fa-times fa-2x"></i>
+          </div>
+          <div>
+            <p>{{genre}}</p>
+          <div class="bookDes">
+            <p>{{description}}</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </ul>
+  </section>
+</section>
