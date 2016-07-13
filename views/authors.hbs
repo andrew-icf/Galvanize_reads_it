@@ -1,0 +1,45 @@
+<a href="/authors">
+  <section class="box">
+    <i class="fa fa-user fa-2x"></i>
+    <h2>Authors</h2>
+  </section>
+</a>
+<a href="/books">
+  <section class="box">
+    <i class="fa fa-bookmark fa-2x"></i>
+    <h2>Books</h2>
+  </section>
+</a>
+
+<section class="flexy">
+  <section class='bookPage'>
+    <ul>
+      {{#each author}}
+      <div class="bookCover">
+        <img src="{{this.portrait_url}}" alt="Portrait" />
+        <div class="bookInfo">
+          <li>{{this.first_name}}</li>
+          <div class="icon">
+          <a href="/books/{{this.bookId}}/editBook"><i class="fa fa-pencil fa-2x"></i></a>
+          <a href="/books/{{this.bookId}}/deleteBook"><i class="fa fa-times fa-2x"></i></a>
+          </div>
+          <div>
+            <p>{{this.last_name}}</p>
+            <!-- <div> -->
+              <!-- {{#each ../author}}
+              <p>By: {{this.first_name}} {{this.last_name}}</p>
+              {{/each}} -->
+            <!-- </div> -->
+          <div class="bookDes">
+            <p>{{this.bio}}</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </ul>
+    <a href="/add"><div class="addButton">
+      <h2>Add a Book</h2>
+    </div></a>
+  </section>
+</section>
