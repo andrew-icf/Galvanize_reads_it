@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
     'author.last_name',
     'author.bio',
     'author.portrait_url'
-  ).join('book_author', 'author_id', 'author.id')
+  ).leftJoin('book_author', 'author_id', 'author.id')
   // .where('author.id', 'author_id')
   ]).then(function(data){
     console.log(data[1]);
