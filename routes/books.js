@@ -27,26 +27,6 @@ router.get('/', function(req, res, next) {
   });
 });
 
-// router.get('/:id', function(req, res, next) {
-//   return Promise.join(
-//     knex('book').select(
-//       'book.id as bookId',
-//       'book.title',
-//       'book.genre',
-//       'book.description',
-//       'book.cover_url'
-//     ).join('book_author', 'book.id', 'book_id')
-//     .where('book.id', req.params.id).first(),
-//     knex('author').select(
-//       'author.first_name',
-//       'author.last_name'
-//     ).join('book_author', 'author.id', 'author_id')
-//     .where('author.id', req.params.id)
-//   ).then(function(data){
-//     // console.log(data);
-//     res.render('editBook', {book: data[0], author: data[1]})
-//   });
-// });
 
 router.get('/:id/editBook', function(req, res) {
   Promise.all([
