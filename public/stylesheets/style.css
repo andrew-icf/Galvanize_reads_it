@@ -64,14 +64,16 @@ header {
   margin: 2rem; }
   .box i {
     margin-left: 9vw;
-    margin-top: 1vh; }
+    margin-top: 1vh;
+    color: #191b18; }
   .box h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    color: #191b18; }
 
 .bookCover {
   display: flex;
@@ -95,16 +97,44 @@ header {
     color: rgba(194, 9, 36, 0.9); }
 
 .addButton {
-  width: 18vw;
+  width: 55vw;
   height: 3vh;
   padding: 2rem;
   background-color: #236467;
   margin-bottom: 2rem;
   color: #f5f6fa;
   font-weight: 600;
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-align: center; }
 
 a {
   text-decoration: none !important; }
+
+.formCenter {
+  margin-left: 32rem; }
+  .formCenter h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  .formCenter label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    line-height: 1.5rem; }
+  .formCenter input {
+    width: 20vw;
+    height: 3vh;
+    margin-bottom: 1rem; }
+  .formCenter textarea {
+    width: 20vw;
+    margin-bottom: 1rem; }
+  .formCenter button {
+    background-color: #236467;
+    color: #f5f6fa;
+    width: 20vw;
+    height: 8vh;
+    font-size: 1.6rem;
+    border: none; }
 
 /*# sourceMappingURL=style.css.map */

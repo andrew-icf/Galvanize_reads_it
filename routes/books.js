@@ -5,7 +5,7 @@ var knex = require('../db/knex');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   knex('book').select().then(function(data){
-    res.render('book', {data: data});
+    res.render('books', {data: data});
   });
 });
 

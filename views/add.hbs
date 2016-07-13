@@ -1,0 +1,29 @@
+<a href="/authors">
+  <section class="box">
+    <i class="fa fa-user fa-2x"></i>
+    <h2>Authors</h2>
+  </section>
+</a>
+<a href="/books">
+  <section class="box">
+    <i class="fa fa-bookmark fa-2x"></i>
+    <h2>Books</h2>
+  </section>
+</a>
+
+<section class="formCenter">
+  <h1>Add a Book</h1>
+  <section>
+    <form action="/add" method="post">
+      <label for="title">Title:</label><br>
+      <input type="text" name="title" value=""><br>
+      <label for="genre">Genre:</label><br>
+      <input type="text" name="genre" value=""><br>
+      <label for="cover_url">Cover Image URL:</label><br>
+      <input type="text" name="cover_url" value=""><br>
+      <label for="description">Description:</label><br>
+      <textarea name="description" rows="8" cols="40"></textarea><br>
+      <button type="submit" name="button">Add Book</button>
+    </form>
+  </section>
+</section>

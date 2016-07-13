@@ -70,6 +70,7 @@ header {
   i {
     margin-left: 9vw;
     margin-top: 1vh;
+    color: $black;
   }
   h2{
     display: flex;
@@ -77,6 +78,7 @@ header {
     align-items: center;
     @include header-text;
     font-size: 1.5rem;
+    color: $black;
   }
 }
 .bookCover {
@@ -103,7 +105,7 @@ header {
   }
 }
 .addButton {
-  width: 18vw;
+  width: 55vw;
   height: 3vh;
   padding: 2rem;
   background-color: #236467;
@@ -111,7 +113,38 @@ header {
   color: $white;
   font-weight: 600;
   font-size: 2rem;
+  text-align: center;
 }
 a  {
   text-decoration: none !important;
+}
+.formCenter {
+  margin-left: 32rem;
+  h1{
+    @include header-text;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  label{
+    @include header-text;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  input {
+    width: 20vw;
+    height: 3vh;
+    margin-bottom: 1rem;
+  }
+  textarea{
+    width: 20vw;
+    margin-bottom: 1rem;
+  }
+  button {
+    background-color: #236467;
+    color: $white;
+    width: 20vw;
+    height: 8vh;
+    font-size: 1.6rem;
+    border: none;
+  }
 }
