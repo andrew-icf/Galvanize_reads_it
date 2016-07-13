@@ -22,29 +22,8 @@ router.get('/', function(req, res, next) {
   ).join('book_author', 'author_id', 'author.id')
   // .where('author.id', 'author_id')
   ]).then(function(data){
-    console.log(data[1].first_name);
-    res.render('books', {data: data[0], author: data[1]});
-  });
-});
-
-router.get('/:id', function(req, res, next) {
-  return Promise.all([
-    knex('book').select(
-      'book.id as bookId',
-      'book.title',
-      'book.genre',
-      'book.description',
-      'book.cover_url'
-    ).join('book_author', 'book.id', 'book_id')
-    .where('book.id', req.params.id).first(),
-    knex('author').select(
-      'author.first_name',
-      'author.last_name'
-    ).join('book_author', 'author.id', 'author_id')
-    .where('author.id', req.params.id)
-  ]).then(function(data){
-    // console.log(data);
-    res.render('editBook', {book: data[0], author: data[1]})
+    console.log(data[1]);
+    res.render('authors', {data: data[0], author: data[1]});
   });
 });
 
