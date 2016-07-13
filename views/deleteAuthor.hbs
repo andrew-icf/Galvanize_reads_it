@@ -1,0 +1,26 @@
+<a href="/authors">
+  <section class="box">
+    <i class="fa fa-user fa-2x"></i>
+    <h2>Authors</h2>
+  </section>
+</a>
+<a href="/books">
+  <section class="box">
+    <i class="fa fa-bookmark fa-2x"></i>
+    <h2>Books</h2>
+  </section>
+</a>
+
+<section class="layout">
+  <section class="bookEditInfo">
+    <img src="{{data.portrait_url}}" alt="book cover" />
+  </section>
+    <div><p>Name: {{data.first_name}} {{data.last_name}}</p></div>
+    <!-- <div><p>Genre: </p></div> -->
+    <div><p>{{data.bio}}</p></div>
+</section>
+
+<section class="deleteForm">
+  <h1>Deleting this Author</h1>
+  <a href="/authors/{{data.id}}/deleteAuthor/bye"><button class='delete' type="submit">Delete Author</button></a>
+</section>

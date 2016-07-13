@@ -1,0 +1,38 @@
+<a href="/authors">
+  <section class="box">
+    <i class="fa fa-user fa-2x"></i>
+    <h2>Authors</h2>
+  </section>
+</a>
+<a href="/books">
+  <section class="box">
+    <i class="fa fa-bookmark fa-2x"></i>
+    <h2>Books</h2>
+  </section>
+</a>
+
+<section class="layout">
+  <section class="bookEditInfo">
+    <img src="{{author.portrait_url}}" alt="Portrait" />
+  </section>
+    <div><p>Name: {{author.first_name}} {{author.last_name}}</p></div>
+    <div><p>{{author.bio}}</p></div>
+
+
+  <section class="formCenter">
+    <h1>Update and Edit your Author:</h1>
+    <section>
+      <form action="/authors/{{author.id}}/editAuthor" method="post">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" name="first_name" value="{{author.first_name}}" required><br>
+        <label for="last_name">Last Night:</label><br>
+        <input type="text" name="last_name" value="{{author.last_name}}" required><br>
+        <label for="portrait_url">Portrait URL:</label><br>
+        <input type="text" name="portrait_url" value="{{auhtor.portrait_url}}" required><br>
+        <label for="bio">Biography:</label><br>
+        <textarea name="bio" rows="8" cols="40" required></textarea><br>
+        <button type="submit">Update Author</button>
+      </form>
+    </section>
+  </section>
+</section>

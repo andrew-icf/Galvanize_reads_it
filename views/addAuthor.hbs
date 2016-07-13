@@ -16,13 +16,13 @@
   <section>
     <form action="/addAuthor" method="post">
       <label for="first_name">First Name:</label><br>
-      <input type="text" name="first_name" value=""><br>
+      <input type="text" name="first_name" value="" required><br>
       <label for="last_name">Last Name:</label><br>
-      <input type="text" name="last_name" value=""><br>
+      <input type="text" name="last_name" value="" required><br>
       <label for="portrait_url">Portrait URL:</label><br>
-      <input type="text" name="portrait_url" value=""><br>
+      <input type="text" name="portrait_url" value="" required><br>
       <label for="bio">Biography:</label><br>
-      <textarea name="bio" rows="8" cols="40"></textarea><br>
+      <textarea name="bio" rows="8" cols="40" required></textarea><br>
       <button type="submit" name="button">Add Author</button>
     </form>
   </section>
