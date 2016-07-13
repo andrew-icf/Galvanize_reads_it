@@ -16,17 +16,22 @@
     <ul>
       {{#each data}}
       <div class="bookCover">
-        <img src="{{cover_url}}" alt="book cover" />
+        <img src="{{this.cover_url}}" alt="book cover" />
         <div class="bookInfo">
-          <li>{{title}}</li>
+          <li>{{this.title}}</li>
           <div class="icon">
-            <i class="fa fa-pencil fa-2x"></i>
-            <i class="fa fa-times fa-2x"></i>
+          <a href="/books/{{this.bookId}}/editBook"><i class="fa fa-pencil fa-2x"></i></a>
+          <a href="/books/{{this.bookId}}/deleteBook"><i class="fa fa-times fa-2x"></i></a>
           </div>
           <div>
-            <p>{{genre}}</p>
+            <p>{{this.genre}}</p>
+            <!-- <div> -->
+              <!-- {{#each ../author}}
+              <p>By: {{this.first_name}} {{this.last_name}}</p>
+              {{/each}} -->
+            <!-- </div> -->
           <div class="bookDes">
-            <p>{{description}}</p>
+            <p>{{this.description}}</p>
           </div>
           </div>
         </div>

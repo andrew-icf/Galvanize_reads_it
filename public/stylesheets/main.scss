@@ -118,12 +118,30 @@ header {
 a  {
   text-decoration: none !important;
 }
-.formCenter {
-  margin-left: 32rem;
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+  width: 30%;
+  img {
+    width: 30vw;
+    height: 50vh;
+  }
+  p {
+    width: 100%;
+    display: block;
+  }
+}
+.addForm {
+  width: 40%;
+  margin-left: 30rem;
+  margin-bottom: 5rem;
   h1{
     @include header-text;
     font-size: 2rem;
     margin-bottom: 1rem;
+    width: 25vw;
   }
   label{
     @include header-text;
@@ -146,5 +164,72 @@ a  {
     height: 8vh;
     font-size: 1.6rem;
     border: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: $alert;
+    width: 25vw;
+  }
+}
+.deleteForm {
+  width: 40%;
+  margin-left: 38rem;
+  margin-top: -25rem;
+  h1{
+    @include header-text;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 25vw;
+  }
+  button {
+    background-color: #236467;
+    color: $white;
+    width: 20vw;
+    height: 8vh;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: $alert;
+    width: 25vw;
+  }
+}
+.formCenter {
+  width: 40%;
+  margin-left: 38rem;
+  margin-top: -27rem;
+  h1{
+    @include header-text;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 25vw;
+  }
+  label{
+    @include header-text;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  input {
+    width: 20vw;
+    height: 3vh;
+    margin-bottom: 1rem;
+  }
+  textarea{
+    width: 20vw;
+    margin-bottom: 1rem;
+  }
+  button {
+    background-color: #236467;
+    color: $white;
+    width: 20vw;
+    height: 8vh;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+  }
+  .delete {
+    background-color: $alert;
+    width: 25vw;
   }
 }

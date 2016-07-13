@@ -14,11 +14,12 @@ router.post('/', function(req, res, next) {
     cover_url: req.body.cover_url,
     description: req.body.description
   };
-  knex('book').insert(data).then(function(message){
+  knex('book').insert(data).then(function(){
+    // console.log(data);
    res.redirect('/books');
   }).catch(function(error){
    next(error);
-  })
+ });
 });
 
 module.exports = router;

@@ -110,13 +110,85 @@ header {
 a {
   text-decoration: none !important; }
 
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+  width: 30%; }
+  .layout img {
+    width: 30vw;
+    height: 50vh; }
+  .layout p {
+    width: 100%;
+    display: block; }
+
+.addForm {
+  width: 40%;
+  margin-left: 30rem;
+  margin-bottom: 5rem; }
+  .addForm h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 25vw; }
+  .addForm label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    line-height: 1.5rem; }
+  .addForm input {
+    width: 20vw;
+    height: 3vh;
+    margin-bottom: 1rem; }
+  .addForm textarea {
+    width: 20vw;
+    margin-bottom: 1rem; }
+  .addForm button {
+    background-color: #236467;
+    color: #f5f6fa;
+    width: 20vw;
+    height: 8vh;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer; }
+  .addForm .delete {
+    background-color: #bf4040;
+    width: 25vw; }
+
+.deleteForm {
+  width: 40%;
+  margin-left: 38rem;
+  margin-top: -25rem; }
+  .deleteForm h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 25vw; }
+  .deleteForm button {
+    background-color: #236467;
+    color: #f5f6fa;
+    width: 20vw;
+    height: 8vh;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer; }
+  .deleteForm .delete {
+    background-color: #bf4040;
+    width: 25vw; }
+
 .formCenter {
-  margin-left: 32rem; }
+  width: 40%;
+  margin-left: 38rem;
+  margin-top: -27rem; }
   .formCenter h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 2rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    width: 25vw; }
   .formCenter label {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
@@ -135,6 +207,10 @@ a {
     width: 20vw;
     height: 8vh;
     font-size: 1.6rem;
-    border: none; }
+    border: none;
+    cursor: pointer; }
+  .formCenter .delete {
+    background-color: #bf4040;
+    width: 25vw; }
 
 /*# sourceMappingURL=style.css.map */
