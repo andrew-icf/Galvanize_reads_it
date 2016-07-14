@@ -56,4 +56,11 @@ router.get('/:id/deleteAuthor/bye', function(req, res, next) {
   });
 });
 
+router.get('/:id/singlePage', function(req, res, next) {
+  knex('author').where({id: req.params.id}).select().first()
+  .then(function(data){
+    res.render('single_page', {data: data});
+  });
+});
+
 module.exports = router;

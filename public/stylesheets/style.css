@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 header {
   background-color: #030444;
   color: #f5f6fa;
@@ -212,5 +213,25 @@ a {
   .formCenter .delete {
     background-color: #bf4040;
     width: 25vw; }
+
+.page {
+  width: 55vw;
+  height: 70vh;
+  margin: auto;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background: linear-gradient(to bottom right, rgba(42, 72, 244, 0.81), #f5f6fa);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem; }
+  .page h3 {
+    font-size: 3rem; }
+  .page img {
+    padding: 1.5rem;
+    float: right;
+    width: 25vw;
+    height: 35vh; }
+  .page p {
+    margin-top: 3rem; }
 
 /*# sourceMappingURL=style.css.map */

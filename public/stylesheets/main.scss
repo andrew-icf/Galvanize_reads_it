@@ -233,3 +233,25 @@ a  {
     width: 25vw;
   }
 }
+.page {
+  width: 55vw;
+  height: 70vh;
+  margin: auto;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background: linear-gradient(to bottom right, $light-blue, $white);
+  @include p-text;
+  h3 {
+    font-size: 3rem;
+  }
+  img {
+    padding: 1.5rem;
+    float: right;
+    width: 25vw;
+    height: 35vh;
+  }
+  p {
+    margin-top: 3rem;
+  }
+}
