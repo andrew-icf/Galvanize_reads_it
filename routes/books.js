@@ -19,10 +19,10 @@ router.get('/', function(req, res, next) {
     'author.last_name',
     'author.bio',
     'author.portrait_url'
-  ).join('book_author', 'author_id', 'author.id')
-  // .where('author.id', 'author_id')
+  ).leftJoin('book_author', 'author_id', 'author.id')
+  // .where({authorId: req.params.id}).select().first()
   ]).then(function(data){
-    // console.log(data[0]);
+    console.log(data[1]);
     res.render('books', {data: data[0], author: data[1]});
   });
 });
@@ -54,6 +54,13 @@ router.get('/:id/deleteBook', function(req, res, next) {
 router.get('/:id/deleteBook/bye', function(req, res, next) {
   knex('book').where({id: req.params.id}).del().then(function() {
     res.redirect('/books');
+  });
+});
+
+router.get('/:id/singleBook', function(req, res, next) {
+  knex('book').where({id: req.params.id}).select().first()
+  .then(function(data){
+    res.render('single_book', {data: data});
   });
 });
 

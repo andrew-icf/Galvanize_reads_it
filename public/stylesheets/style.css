@@ -45,24 +45,29 @@ header {
 
 .bookPage {
   width: 60vw;
-  height: 40vh;
+  height: 48vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 10vh;
   margin-left: 20vw;
+  line-height: 1.2rem;
   line-height: 1.2rem; }
   .bookPage img {
     width: 15vw;
-    height: 40vh; }
+    height: 40vh;
+    padding: .5rem; }
+  .bookPage li {
+    font-size: 1.5rem; }
 
 .box {
   width: 20vw;
   height: 15vh;
   background-color: #d8dade;
   display: inline-block;
-  margin: 2rem; }
+  margin: 2rem;
+  border-radius: 5px; }
   .box i {
     margin-left: 9vw;
     margin-top: 1vh;
@@ -78,7 +83,10 @@ header {
 
 .bookCover {
   display: flex;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  background: linear-gradient(to bottom right, rgba(42, 72, 244, 0.81), #f5f6fa);
+  padding: 1rem;
+  border-radius: 10px; }
 
 .bookInfo {
   width: 80%;
@@ -106,7 +114,8 @@ header {
   color: #f5f6fa;
   font-weight: 600;
   font-size: 2rem;
-  text-align: center; }
+  text-align: center;
+  border-radius: 5px; }
 
 a {
   text-decoration: none !important; }
@@ -153,7 +162,8 @@ a {
     height: 8vh;
     font-size: 1.6rem;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 5px; }
   .addForm .delete {
     background-color: #bf4040;
     width: 25vw; }
@@ -175,7 +185,8 @@ a {
     height: 8vh;
     font-size: 1.6rem;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 5px; }
   .deleteForm .delete {
     background-color: #bf4040;
     width: 25vw; }
@@ -209,7 +220,8 @@ a {
     height: 8vh;
     font-size: 1.6rem;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 5px; }
   .formCenter .delete {
     background-color: #bf4040;
     width: 25vw; }
@@ -223,7 +235,9 @@ a {
   padding: 1rem;
   background: linear-gradient(to bottom right, rgba(42, 72, 244, 0.81), #f5f6fa);
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 50px 2px #48046c; }
   .page h3 {
     font-size: 3rem; }
   .page img {
@@ -232,6 +246,31 @@ a {
     width: 25vw;
     height: 35vh; }
   .page p {
+    margin-top: 3rem; }
+
+.pageB {
+  width: 55vw;
+  height: 70vh;
+  margin: auto;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background: linear-gradient(to bottom right, rgba(42, 72, 244, 0.81), #f5f6fa);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 50px 2px #48046c; }
+  .pageB h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 3.5rem; }
+  .pageB img {
+    margin-top: -7rem;
+    padding: 1.5rem;
+    float: right;
+    width: 25vw;
+    height: 55vh; }
+  .pageB p {
     margin-top: 3rem; }
 
 /*# sourceMappingURL=style.css.map */

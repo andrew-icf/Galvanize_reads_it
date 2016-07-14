@@ -48,7 +48,7 @@ header {
 
 .bookPage {
   width: 60vw;
-  height: 40vh;
+  height: 48vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,9 +56,14 @@ header {
   margin-top: 10vh;
   margin-left: 20vw;
   line-height: 1.2rem;
+  line-height: 1.2rem;
   img {
     width: 15vw;
     height: 40vh;
+    padding: .5rem;
+  }
+  li {
+    font-size: 1.5rem;
   }
 }
 .box {
@@ -67,6 +72,7 @@ header {
   background-color: $light-grey;
   display: inline-block;
   margin: 2rem;
+  border-radius: 5px;
   i {
     margin-left: 9vw;
     margin-top: 1vh;
@@ -84,6 +90,9 @@ header {
 .bookCover {
   display: flex;
   margin-bottom: 5rem;
+  background: linear-gradient(to bottom right, $light-blue, $white);
+  padding: 1rem;
+  border-radius: 10px;
 }
 .bookInfo {
   width: 80%;
@@ -114,6 +123,7 @@ header {
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
+  border-radius: 5px;
 }
 a  {
   text-decoration: none !important;
@@ -165,6 +175,7 @@ a  {
     font-size: 1.6rem;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
   }
   .delete {
     background-color: $alert;
@@ -189,6 +200,7 @@ a  {
     font-size: 1.6rem;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
   }
   .delete {
     background-color: $alert;
@@ -227,6 +239,7 @@ a  {
     font-size: 1.6rem;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
   }
   .delete {
     background-color: $alert;
@@ -242,6 +255,8 @@ a  {
   padding: 1rem;
   background: linear-gradient(to bottom right, $light-blue, $white);
   @include p-text;
+  border-radius: 10px;
+  box-shadow: 2px 2px 50px 2px rgb(72, 4, 108);
   h3 {
     font-size: 3rem;
   }
@@ -250,6 +265,33 @@ a  {
     float: right;
     width: 25vw;
     height: 35vh;
+  }
+  p {
+    margin-top: 3rem;
+  }
+}
+.pageB {
+  width: 55vw;
+  height: 70vh;
+  margin: auto;
+  line-height: 1.5rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background: linear-gradient(to bottom right, $light-blue, $white);
+  @include p-text;
+  border-radius: 10px;
+  box-shadow: 2px 2px 50px 2px rgb(72, 4, 108);
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 3.5rem;
+  }
+  img {
+    margin-top: -7rem;
+    padding: 1.5rem;
+    float: right;
+    width: 25vw;
+    height: 55vh;
   }
   p {
     margin-top: 3rem;
